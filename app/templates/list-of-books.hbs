@@ -1,0 +1,7 @@
+<ul>
+  {{#each model as |book|}}
+      <li>{{book.title}}. Автор: {{book.author}}. Рейтинг: ({{book.rating}})</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
