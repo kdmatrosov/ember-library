@@ -10,9 +10,12 @@ Router.map(function() {
   this.route('authors', function() {
     this.route('author', {
       path: ':name'
+    }, function()
+    {
+
+      this.route('books');
     });
   });
-  this.route('books');
 });
 
 export default Router;
