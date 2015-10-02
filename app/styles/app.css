@@ -19,41 +19,26 @@ html, body {
 }
 
 .books .rating {
-
   color: #aaa;
-
   font-size: 1.1em;
-
 }
 
 .empty-list {
-
   min-height: 100px;
-
   text-align: center;
-
 }
 
 .empty-list .empty-message {
-
   display: inline-block;
-
   color: #555;
-
   line-height: 100px;
-
 }
 
 .author-link .pointer {
-
   float: right;
-
   display: none;
-
 }
 
 .author-link.active .pointer {
-
   display: block;
-
 }
