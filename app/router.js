@@ -7,7 +7,11 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('list-of-books');
-  this.route('authors');
+  this.route('authors', function() {
+    this.route('author', {
+      path: ':name'
+    });
+  });
   this.route('books');
 });
 
