@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="row">
+    <ul class="list-group books">
+      {{#each model.books as |book|}}
+          <li class="list-group-item book">
+            {{book.title}}
+              <span class="rating pull-right">{{book.rating}}</span>
+          </li>
+      {{/each}}
+    </ul>
+</div>

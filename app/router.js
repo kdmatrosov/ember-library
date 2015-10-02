@@ -6,10 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('list-of-books');
   this.route('authors', function() {
     this.route('author', {
-      path: ':name'
+      path: ':fio'
     }, function()
     {
 

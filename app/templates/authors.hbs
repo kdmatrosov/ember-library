@@ -2,7 +2,7 @@
 <div class="col-md-4">
     <div class="list-group">
       {{#each model as |author|}}
-        {{#link-to "authors.author.books" band class="list-group-item author-link"}}
+        {{#link-to "authors.author.books" author class="list-group-item author-link"}}
           {{author.name}}
             <span class="pointer glyphicon glyphicon-chevron-right"></span>
         {{/link-to}}
