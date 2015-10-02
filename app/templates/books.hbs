@@ -1,0 +1,17 @@
+<div class="row list-wrapper">
+
+    <ul class="list-group books">
+
+      {{#each model as |book|}}
+
+          <li class="list-group-item">
+            {{book.title}} от <em>{{book.author}}</em>
+
+              <span class="rating pull-right">{{book.rating}}</span>
+          </li>
+
+      {{/each}}
+
+    </ul>
+
+</div>

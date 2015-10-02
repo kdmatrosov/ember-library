@@ -1,3 +1,23 @@
-<h2 id="title">Библиотека</h2>
 
-{{outlet}}
+<div class="container">
+    <div class="page-header">
+        <h1>Библиотека<small> с EmberJS</small></h1>
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav">
+
+                <li>{{link-to "Авторы" "authors"}}</li>
+
+                <li>{{link-to "Книги" "books"}}</li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+  {{outlet}}
+</div>
+
