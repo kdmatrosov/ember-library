@@ -45,6 +45,10 @@ authors.pushObjects([Ostin, Orwell, Tolkin]);
 
 export default Ember.Route.extend({
 
+  afterModel: function() {
+    Ember.$(document).attr('title', 'Авторы');
+  },
+
   model: function() {
     return authors;
   },
