@@ -3,7 +3,9 @@
     <div class="list-group">
         <div class="list-group-item">
           {{input type="text" class="new-author" placeholder="Автор (латыницей)" value=name}}
-            <button class="btn btn-primary btn-sm new-author-button" {{action "createAuthor"}}>Добавить</button>
+            <button class="btn btn-primary btn-sm new-author-button"
+              disabled={{isAddButtonDisabled}}
+              {{action "createAuthor"}}>Добавить</button>
         </div>
       {{#each model as |author|}}
         {{#link-to "authors.author.books" author class="list-group-item author-link"}}
