@@ -1,18 +1,8 @@
 import Ember from 'ember';
 
-var Author = Ember.Object.extend({
-  name: '',
-  path: '',
-  fio: function() {
-    return this.get('path').dasherize();
-  }.property('path')
-});
+import Author from '../models/author';
+import Book from '../models/book';
 
-var Book = Ember.Object.extend({
-  title: '',
-  rating: 0,
-  author: ''
-});
 var first = Book.create({
   title: 'Властелин колец',
   author: 'Дж. Р. Р. Толкиен',
