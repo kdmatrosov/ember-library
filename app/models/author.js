@@ -9,6 +9,6 @@ export default Ember.Object.extend({
   }),
   path: '',
   fio: function() {
-    return this.get('path').dasherize();
-  }.property('path')
+    return this.get('name').dasherize();
+  }.property('name')
 });

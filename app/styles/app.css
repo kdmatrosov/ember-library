@@ -42,3 +42,25 @@ html, body {
 .author-link.active .pointer {
   display: block;
 }
+/*добавление*/
+.new-author {
+  height: 29px;
+  line-height: 28px;
+  width: 60%;
+  padding: 0 4px 0 10px;
+  border: 1px solid #d0d0d0;
+  outline: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.new-author-button {
+  margin-left: 20px;
+}
+.new-book {
+  width: 50%;
+}
+.new-book-button {
+  margin-left: 20px;
+}

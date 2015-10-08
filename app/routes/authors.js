@@ -6,22 +6,22 @@ import Book from '../models/book';
 var first = Book.create({
   title: 'Властелин колец',
   author: 'Дж. Р. Р. Толкиен',
-  rating: 9
+  rating: 5
 });
 var second = Book.create({
   title: 'Гордость и предубеждение',
   author: 'Джейн Остин',
-  rating: 8
+  rating: 5
 });
 var third = Book.create({
   title: '1984',
   author: 'Джордж Оруэлл',
-  rating: 6
+  rating: 2
 });
 var fourth = Book.create({
   title: 'Хоббит',
   author: 'Дж. Р. Р. Толкиен',
-  rating: 9
+  rating: 4
 });
 
 var AuthorCollection = Ember.ArrayProxy.extend({
@@ -47,7 +47,14 @@ export default Ember.Route.extend({
 
   model: function() {
     return authors;
-
+  },
+  actions: {
+    createAuthor: function() {
+      var name = this.get('controller').get('name');
+      var author = Author.create({ name: name });
+      authors.pushObject(author);
+      this.get('controller').set('name', '');
+    }
   }
 
 });
