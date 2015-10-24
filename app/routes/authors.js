@@ -58,6 +58,7 @@ export default Ember.Route.extend({
       var author = Author.create({ name: name });
       authors.pushObject(author);
       this.get('controller').set('name', '');
+      this.transitionTo('authors.author.books', author);
     }
   }
 

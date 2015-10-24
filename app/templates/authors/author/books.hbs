@@ -13,4 +13,12 @@
           </li>
       {{/each}}
     </ul>
+  {{#if noBooks}}
+      <div class="list-group-item empty-list">
+          <div class="empty-message">
+              Книг не добавлено. Хотите добавить <a href="#" {{action
+          "enableBookCreation"}}>одну?</a>
+          </div>
+      </div>
+  {{/if}}
 </div>
