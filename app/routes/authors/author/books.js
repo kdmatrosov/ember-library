@@ -7,6 +7,10 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    didTransition: function() {
+    var author = this.modelFor('authors.author');
+    document.title = `${author.get('name')} книги`;
+  },
     createBook: function() {
       var controller = this.get('controller');
       var author = this.modelFor('authors.author');

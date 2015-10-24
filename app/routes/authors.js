@@ -57,6 +57,9 @@ export default Ember.Route.extend({
     return authors;
   },
   actions: {
+    didTransition: function() {
+    document.title = 'Авторы';
+  },
     createAuthor: function() {
       var name = this.get('controller').get('name');
       var author = Author.create({ name: name });
