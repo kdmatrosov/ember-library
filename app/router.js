@@ -11,8 +11,8 @@ Router.map(function() {
       path: ':fio'
     }, function()
     {
-
       this.route('books');
+      this.route('details', {});
     });
   });
 });
