@@ -3,8 +3,9 @@
         <li class="list-group-item">
           {{input type="text" class="new-author" placeholder="Новая книга"
           value=title}}
-            <button class="btn btn-primary btn-sm new-book-button" {{action
-            "createBook"}}>Добавить</button>
+            <button class="btn btn-primary btn-sm new-book-button"
+                    disabled={{isAddButtonDisabled}}
+              {{action "createBook"}}>Добавить</button>
         </li>
       {{#each model.books as |book|}}
           <li class="list-group-item book">
