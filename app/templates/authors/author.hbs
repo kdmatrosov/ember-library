@@ -1,1 +1,7 @@
-{{outlet}}
+<ul class="nav nav-tabs">
+    <li>{{link-to 'Описание' 'authors.author.details' model}}</li>
+    <li>{{link-to 'Книги' 'authors.author.books' model}}</li>
+</ul>
+<div class="author-info">
+  {{outlet}}
+</div>

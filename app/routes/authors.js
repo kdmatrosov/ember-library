@@ -31,14 +31,18 @@ var AuthorCollection = Ember.ArrayProxy.extend({
 });
 
 var authors = AuthorCollection.create();
-var Ostin = Author.create({ name: 'Джейн Остин', path:'Ostin', books:
+var Ostin = Author.create({ name: 'Джейн Остин',
+  description: 'автор 1',
+  path:'Ostin', books:
 
   [second] });
 
-var Orwell = Author.create({ name: 'Джордж Оруэлл', path:'Orwell', books: [
+var Orwell = Author.create({ name: 'Джордж Оруэлл',
+  description: 'автор 2',path:'Orwell', books: [
   third] });
 
-var Tolkin = Author.create({ name: 'Дж. Р. Р. Толкиен', path:'Tolkin', books:
+var Tolkin = Author.create({ name: 'Дж. Р. Р. Толкиен',
+  description: 'автор 3', path:'Tolkin', books:
   [first, fourth] });
 
 authors.pushObjects([Ostin, Orwell, Tolkin]);

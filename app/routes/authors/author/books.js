@@ -5,6 +5,7 @@ export default Ember.Route.extend({
   model: function() {
     return this.modelFor('authors.author');
   },
+
   actions: {
     createBook: function() {
       var controller = this.get('controller');
